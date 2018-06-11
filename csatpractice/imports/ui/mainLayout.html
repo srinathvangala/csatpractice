@@ -1,0 +1,25 @@
+<template name="mainLayout">
+        <nav class=" navbar navbar-expand-lg navbar-light bg-light ">
+                <div class="row" style="width:100%;">
+                    <div class="col-md-3 offset-md-5">
+                            <a class="navbar-brand" href="/">
+                                <img src="/images/icon-leaf.png" width="40" height="40" alt="">
+                                Prelims Practice
+                            </a>
+                    </div>
+                    <div class="col-md-3 offset-md-1">
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                <a class="nav-item nav-link active" href="/addquestion">Add Question <span class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link" href="#">{{> loginButtons}}</a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </nav>  
+    <div class="container">
+            <main>
+                {{> Template.dynamic template=main}}
+            </main>
+    </div>
+</template>

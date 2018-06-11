@@ -1,0 +1,14 @@
+<template name="homeLayout">    
+        {{#each qas}}
+            <div class="card bg-light mb-3">
+                <div class="card-header">{{question}}</div>
+                <div class="card-body">
+                    <h5 class="card-title">Light card title</h5>
+                    <p class="card-text">{{answer}}</p>
+                    <a href="/question/{{_id}}">Link to question</a>
+                </div>
+            </div>
+        {{/each}}
+</template>
+    
+    
